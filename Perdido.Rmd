@@ -23,7 +23,9 @@ library(caret)
 Loading study area shapefile
 
 ```{r}
-studyArea <- st_read("C:/Users/sza0209/OneDrive - Auburn University/Documents/MSc/Thesis/Study #1/Perdido/PerdidoShapefile.shp")
+# studyArea <- st_read("C:/Users/sza0209/OneDrive - Auburn University/Documents/MSc/Thesis/Study #1/Perdido/PerdidoShapefile.shp")
+
+studyArea = st_read('/vsicurl/https://github.com/sza0209/Sinka-study-files/raw/refs/heads/main/PerdidoData.shp')
 plot(studyArea)
 ```
 
